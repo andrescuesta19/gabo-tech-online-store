@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, MessageCircle, Instagram } from 'lucide-react';
 import { Button } from './ui/button';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +11,7 @@ const Header = () => {
   };
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/573106505062?text=Hola, me interesa conocer más sobre sus productos', '_blank');
+    window.open('https://wa.me/573106505062', '_blank');
   };
 
   return (
@@ -19,25 +20,18 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="bg-gradient-to-r from-gaboOrange to-gaboBlue text-white px-4 py-2 rounded-lg font-bold text-xl">
-              Gabo Technology
-            </div>
+            <div className="flex items-center gap-3">
+                <img src="/logo.png" alt="Logo Gabo Technology" className="h-10 w-auto" />
+                <span className="text-2xl md:text-3xl font-extrabold text-gaboBlue tracking-tight">Gabo <span className="text-gaboOrange">TECHNOLOGY</span></span>
+              </div>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#inicio" className="text-gaboText hover:text-gaboOrange transition-colors font-medium">
-              Inicio
-            </a>
-            <a href="#catalogo" className="text-gaboText hover:text-gaboOrange transition-colors font-medium">
-              Catálogo
-            </a>
-            <a href="#conocenos" className="text-gaboText hover:text-gaboOrange transition-colors font-medium">
-              Conócenos
-            </a>
-            <a href="#contacto" className="text-gaboText hover:text-gaboOrange transition-colors font-medium">
-              Contacto
-            </a>
+            <Link to="/" className="text-gaboText hover:text-gaboBlue font-semibold transition-colors">Inicio</Link>
+            <Link to="/catalogo" className="text-gaboText hover:text-gaboBlue font-semibold transition-colors">Catálogo</Link>
+<Link to="/comparaciones" className="text-gaboText hover:text-gaboBlue font-semibold transition-colors">Comparaciones</Link>
+            <Link to="/contacto" className="text-gaboText hover:text-gaboBlue font-semibold transition-colors">Contacto</Link>
           </nav>
 
           {/* Desktop CTAs */}

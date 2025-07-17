@@ -46,7 +46,7 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="text-gaboOrange mt-1 flex-shrink-0" />
                 <div className="text-gray-300 text-sm">
-                  <p>Bogotá, Colombia</p>
+                  <p>Turbo, Antioquía, Colombia</p>
                   <p>Entrega a domicilio en toda la ciudad</p>
                 </div>
               </div>
@@ -118,6 +118,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
+        <div className="mt-12 text-center text-gray-400 text-xs">
+          Desarrollado por Andres Felipe Davila Cuesta
+        </div>
         <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
             © 2024 Gabo Technology. Todos los derechos reservados.
