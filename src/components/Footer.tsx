@@ -4,7 +4,7 @@ import { MapPin, Phone, Clock, Mail, Instagram, MessageCircle, CreditCard } from
 
 const Footer = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/573001234567', '_blank');
+    window.open('https://wa.me/573106505062', '_blank');
   };
 
   return (
@@ -53,8 +53,8 @@ const Footer = () => {
               
               <div className="flex items-center gap-3">
                 <Phone size={18} className="text-gaboOrange flex-shrink-0" />
-                <a href="tel:+573001234567" className="text-gray-300 hover:text-white transition-colors">
-                  +57 300 123 4567
+                <a href="tel:+573106505062" className="text-gray-300 hover:text-white transition-colors">
+                  +57 310 650 5062
                 </a>
               </div>
               

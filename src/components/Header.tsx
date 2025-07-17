@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X, Phone, MessageCircle, Instagram } from 'lucide-react';
 import { Button } from './ui/button';
@@ -11,7 +10,7 @@ const Header = () => {
   };
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/573001234567?text=Hola, me interesa conocer más sobre sus productos', '_blank');
+    window.open('https://wa.me/573106505062?text=Hola, me interesa conocer más sobre sus productos', '_blank');
   };
 
   return (

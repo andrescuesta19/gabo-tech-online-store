@@ -25,7 +25,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
   const handleWhatsAppInquiry = () => {
     const message = `Hola, me interesa el ${name} ${capacity ? `de ${capacity}` : ''}. ¿Podrían darme más información?`;
-    window.open(`https://wa.me/573001234567?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/573106505062?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   return (

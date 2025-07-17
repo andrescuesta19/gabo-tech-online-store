@@ -1,15 +1,14 @@
-
 import React from 'react';
 import { MessageCircle, Phone } from 'lucide-react';
 import { Button } from './ui/button';
 
 const FinalCTA = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/573001234567?text=Hola, quiero empezar a cotizar con ustedes', '_blank');
+    window.open('https://wa.me/573106505062?text=Hola, quiero empezar a cotizar con ustedes', '_blank');
   };
 
   const handleCallClick = () => {
-    window.location.href = 'tel:+573001234567';
+    window.location.href = 'tel:+573106505062';
   };
 
   return (
